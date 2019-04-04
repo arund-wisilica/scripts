@@ -1,5 +1,5 @@
 #!/bin/bash
-#set -x
+##set -x
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 #PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/home/root/bin
 
