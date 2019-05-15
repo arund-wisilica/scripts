@@ -17,7 +17,7 @@ log_path="/var/log/mysql_bkp/dump.log"
 echo "creating backup of database start at $tstamp" >> "$log_path"
 
 #mysqldump -u $uname  --databases $db_nme  -p$paswd > $bkp_path/$db_nme-$tstamp.sql
-mysqldump -u $uname  --databases $db_nme  -p$paswd | gzip > $bkp_path/$db_nme-$tstamp.sql.gz 
+mysqldump --routines=true --events=true --triggers=true -u $uname  --databases $db_nme  -p$paswd | gzip > $bkp_path/$db_nme-$tstamp.sql.gz 
 size=$(stat -c%s "$bkp_path/$db_nme-$tstamp.sql.gz")
 
 if [  "$size" -lt "100000000" ]; then
