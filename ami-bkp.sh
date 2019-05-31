@@ -2,7 +2,7 @@
 #set -x
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 #PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/home/root/bin
-
+#instance name shoulnot contain any special charecters it will affect AMI naming fail
 date1=$(date +"%Y-%m-%d_%H-%M-%S")
 
 if  [ ! -d "/var/log/ami/" ]; then
