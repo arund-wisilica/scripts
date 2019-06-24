@@ -30,7 +30,8 @@ v24=$(service bridgesocket status | grep running  >/dev/null && echo 1 || echo 0
 v25=$(service dali-service status | grep running  >/dev/null && echo 1 || echo 0)
 v26=$(service alert-rule-hit-cache-service status | grep running  >/dev/null && echo 1 || echo 0)
 }
-
+#Reliance specefic
+#range-in-track-calculation-cache-service
 
 case "$1" in
 	1)
