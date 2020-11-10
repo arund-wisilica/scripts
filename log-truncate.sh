@@ -1,7 +1,7 @@
 #!/bin/bash
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
-#delete older than 7 days of logs
+#delete older than 7 days of logs hm
 #find  /var/www/html/wiseconnect/api/data/logs/* -ctime +7 -type d -exec rm -r {} \;
 
 #truncate logs with size greater than 1GB
